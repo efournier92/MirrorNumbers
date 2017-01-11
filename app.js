@@ -31,46 +31,23 @@ function isMirrorNum(inputNum) {
       return false;
     }
 
-  function is25Pair(first, last) {
-  if (first == 2 && last == 5 || first == 5 && last == 2) {
-    return true;
-  } else {
-    return false;
-  }
-
-  var checkPair = function(first, last) {
-    it perfectMirrors.includes (first) && perfectMirrors.includes  (last) { 
-      if first === last {return true}
-      else if isMirror Paired === true
-    }
-    else return NOT A MIRROR
-  }
-
-  function isMirror (inNum) {
-    if isOdd(inNum) 
-  }
-
-  for (i = 0; i > 5; i++) {
-    if (allMirrorNums[i] == inNum[0]) {
-      if (inNum[0]
-          .slice(-1)) 
-    };
-  }
-  if inNum();
-
-
-  // Is num length odd?
-  len = inNum.length();
-  centerNum = (inNum / 2) + 0.5;
-  if (len % 2 != 0 && perfectMirrors.includes(centerNum)) {
-    // Is first num a perfect mirror?
-    if (allMirrors.includes(inNum[0])){
-      // Is last num a perfect mirror
-      if (allMirrors.includes(inNum[0])){
-
+    function is25Pair(first, last) {
+      if (first == 2 && last == 5 || first == 5 && last == 2) {
+        return true;
+      } else {
+        return false;
       }
-      // Is Firstnum 
     }
 
-    // If so, is middle character a perfect mirror?
+    function checkPair(first, last) {
+      if perfectMirrors.includes(first) && perfectMirrors.includes(last) { 
+        if first === last {
+          return true;
+        } else if (is25Pair) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    }
 
