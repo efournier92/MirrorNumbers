@@ -1,30 +1,28 @@
-function isMirrorNum(inputNum) {
-  const perfectMirrors = [0, 1, 8];
-  inputNum = inputNum.toString;
-  inputNumLength = inNum.length;
-  firstIndex = 0;
-  lastIndex = len - 1;
+function isMirrorNum(input) {
+  var inputNum = input.toString();
+  var inputNumLength = inputNum.length;
+  var firstIndex = 0;
+  var lastIndex = inputNumLength - 1;
 
-  while (firstIndex < (len / 2)) {
-    if (!(isPair(firstIdx, lastIdx))) {
-      console.log('FALSE: ' + inputNum + ' is NOT a mirror number.');
-      break;
+  while (firstIndex < (inputNumLength / 2)) {
+    if (!(isPair(inputNum[firstIndex], inputNum[lastIndex]))) {
+      return('FALSE: ' + input + ' is NOT a mirror number.');
     }
     firstIndex += 1
-    lastIndex  -= 1
-    console.log('TRUE: ' + inputNum + ' IS a mirror number.');
+    lastIndex -= 1
   }
+  return('TRUE: ' + input + ' IS a mirror number.');
 }
 
-function checkPair(first, last) {
-  if perfectMirrors.includes(first) && perfectMirrors.includes(last) { 
-    if first === last {
-      return true;
-    } else if (is25Pair) {
-      return true;
-    } else {
-      return false;
-    }
+function isPair(first, last) {
+  if (isMirrorChar(first) 
+      && isMirrorChar(last)
+      && first === last) { 
+    return true;
+  } else if (is25Pair(first, last)) {
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -38,7 +36,8 @@ function isOdd(num) {
 }
 
 function isMirrorChar(num) {
-  if perfectMirrors.includes(num) {
+const perfectMirrors = ["0", "1", "8"];
+  if (perfectMirrors.includes(num)) {
     return true;
   } else {
     return false;
