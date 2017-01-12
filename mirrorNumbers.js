@@ -8,8 +8,8 @@ function isMirrorNum(input) {
     if (!(isPair(inputNum[firstIndex], inputNum[lastIndex]))) {
       return('FALSE: ' + input + ' is NOT a mirror number.');
     }
-    firstIndex += 1
-    lastIndex -= 1
+    firstIndex += 1;
+    lastIndex -= 1;
   }
   return('TRUE: ' + input + ' IS a mirror number.');
 }
@@ -26,17 +26,8 @@ function isPair(first, last) {
   }
 }
 
-function isOdd(num) {
-  if (num % 2 == 0) {
-    return true;
-  } 
-  else {
-    return false;
-  }
-}
-
 function isMirrorChar(num) {
-const perfectMirrors = ["0", "1", "8"];
+  const perfectMirrors = ["0", "1", "8"];
   if (perfectMirrors.includes(num)) {
     return true;
   } else {
@@ -45,10 +36,9 @@ const perfectMirrors = ["0", "1", "8"];
 }
 
 function is25Pair(first, last) {
-  if (first == 2 && last == 5 || first == 5 && last == 2) {
+  if ((first == 2 && last == 5) || (first == 5 && last == 2)) {
     return true;
   } else {
     return false;
   }
 }
-
