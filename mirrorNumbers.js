@@ -9,7 +9,8 @@ function isMirrorNum(input) {
     var checkFirst = mirrorTable[inputNum[firstIndex]];
     // ensure last digit pairs with first digit
     if (!(checkFirst != undefined && checkFirst == inputNum[lastIndex])) {
-      // if any digit doesn't pair with corresponding digit, input is not a valid mirror number
+      // if any digit doesn't pair with corresponding digit
+      // then input is not a valid mirror number
       return('FALSE: ' + input + ' is NOT a mirror number.');
     }
     // shift focus to next digit pair, moving inward
